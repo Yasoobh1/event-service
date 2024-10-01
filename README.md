@@ -52,4 +52,12 @@ Open your browser and navigate to http://localhost:8080/h2-console.
 Open your browser and navigate to http://localhost:8080/swagger-ui/index.html (replace with your configured Swagger URL).
 
 
+**Postman Collections**
+Postman:
+
+1. Download the Postman collection from this repository (e.g., Event Collection.postman_collection.json).
+2. Open Postman.
+3. Click on Import in the top left corner.
+4. Choose the File option and select the downloaded Postman collection.
+5. Click Import to add the collection to your Postman workspace.
 

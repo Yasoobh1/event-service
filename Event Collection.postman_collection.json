@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "27def762-4bcf-4205-8212-07b574d5a5d3",
+		"name": "Event Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6278515"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"Yasoob\",\n  \"email\": \"myasoob.hamid@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/users/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"1\",\n  \"username\": \"Yasoob\",\n  \"email\": \"myasoob.hamid@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/users/update/{id}"
+					},
+					"response": []
+				},
+				{
+					"name": "User By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/users/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ticket Booking",
+			"item": [
+				{
+					"name": "Book Ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventId\": 1,\n    \"userId\": 1,\n    \"ticketType\": \"VIP\",\n    \"numberOfTickets\": 48\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/tickets/book-ticket"
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Ticket Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventId\": 1,\n    \"ticketType\": \"VIP\",\n    \"price\": 500.0,\n    \"quantity\": 50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/tickets/add-ticket-type"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "Add Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Spring Music Festival\",\n    \"eventDate\": \"2024-10-10\",\n    \"location\": \"Central Park\",\n    \"totalTickets\": 100,\n    \"availableTickets\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/events/add-event"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment Status",
+			"item": [
+				{
+					"name": "Payment Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": 7,\n  \"eventId\": 4,\n  \"ticketType\": \"VIP\",\n  \"numberOfTickets\": 2,\n  \"totalAmount\": 24000.00,\n  \"paymentMethod\": \"524616412612\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/payment"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
