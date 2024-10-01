@@ -33,7 +33,7 @@ The **Event Management Microservice** is a Spring Boot application designed to f
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/Yasoobh1/event-service.gitt
+   git clone https://github.com/Yasoobh1/event-service.git
 
 2. **Clone the repository**:
 cd event-service
