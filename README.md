@@ -34,3 +34,22 @@ The **Event Management Microservice** is a Spring Boot application designed to f
 
    ```bash
    git clone https://github.com/Yasoobh1/event-service.gitt
+
+2. **Clone the repository**:
+cd event-service
+
+3. **Build the project:**:
+mvn clean install
+
+4. **Run the application:**:
+mvn spring-boot:run
+
+5. **Access the application:**:
+Open your browser and navigate to http://localhost:8080/h2-console.
+
+
+6. **Access Swagger UI:**:
+Open your browser and navigate to http://localhost:8080/swagger-ui/index.html (replace with your configured Swagger URL).
+
+
+
